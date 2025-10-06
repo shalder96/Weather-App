@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href= 
+"https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" 
+      rel="stylesheet">
+      <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex justify-center items-center w-screen h-screen relative bg-[url(./background.jpg)] bg-cover bg-center animate-fadeIn">
+  <div class="backdrop-blur-sm inset-0 absolute z-0 bg-black/40 "></div>
+
+  <div id="container" class="border rounded-lg z-10 border-white/50 p-4 flex flex-col justify-center gap-4 bg-white/20 ">
+    <h1 class="m-auto text-black text-3xl font-bold">Search Weather</h1>
+    <div class="flex justify-center items-center gap-4">
+      <input type="search" name="search" id="cityInput" placeholder="Enter city name..." class="p-2 border border-gray-400 outline-none">
+      <button id="searchBtn" class="border border-gray-400 bg-pink-700 px-4 py-2 text-white text-l font-semibold hover:bg-pink-600">Search</button>
+    </div>
+    <div id="display" class="m-auto transition">
+      Result will display here...
+    </div>
+  </div>
+  
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
